@@ -14,7 +14,6 @@ def CountingSort(L):
     counts = [0] * (max(L) + 1)
     for x in L:
         counts[x] += 1
-    print(counts)
     res = []
     for i in range(len(counts)):
         res += [i] * counts[i]
