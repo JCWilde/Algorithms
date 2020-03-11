@@ -6,7 +6,7 @@ def floyd_warshall(M):
             for j in range(len(C)):
                 if C[i][k] + C[k][j] < C[i][j]:
                     C[i][j] = C[i][k] + C[k][j]
-                
+
     return C
 
 def create_adjacency_matrix(V, E):
@@ -24,8 +24,8 @@ def pr(M):
             print(M[i][j], end=' ')
         print()
 
-V = list('abcd')
-E = [(int(e[0]), e[1], e[2]) for e in '8ab 4ad 1ac 3bd 2cd'.split(' ')]
+V = list('abcde')
+E = [(int(e[0]), e[1], e[2]) for e in '1ab 8ae 3be 2bc 4cd 6de'.split(' ')]
 M = create_adjacency_matrix(V, E)
 
 pr(M)
