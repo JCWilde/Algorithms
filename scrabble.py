@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from collections import Counter
+from collectionStuff import Counter
 
 words = set(line.strip() for line in open('wordlist.txt'))
 

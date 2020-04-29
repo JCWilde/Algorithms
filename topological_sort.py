@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collectionStuff import defaultdict
 
 class Digraph(dict):
     def add(self, v):

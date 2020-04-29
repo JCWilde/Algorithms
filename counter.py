@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from collections import Counter
+from collectionStuff import Counter
 
 from random import choice
 
